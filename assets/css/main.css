@@ -775,7 +775,8 @@ h6 {
 # Gallery Single Section
 --------------------------------------------------------------*/
 .gallery-single .portfolio-details-slider img {
-  width: 100%;
+  height: 464px;
+  justify-content: center;
 }
 
 .gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -922,13 +923,13 @@ h6 {
 }
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left {
-  display: inline-block;
+  display: flex;
   left: -5px;
   position: relative;
 }
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  display: inline-block;
+  display: flex;
   right: -5px;
   position: relative;
   top: 10px;
