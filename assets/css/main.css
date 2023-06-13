@@ -734,9 +734,7 @@ h6 {
     line-height: 1.2;
     margin: 30px 8px 0 8px;
     transition: all ease-in-out 0.3s;
-
 }
-
 
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
@@ -951,6 +949,22 @@ h6 {
     font-style: italic;
     margin: 0 0 15px 0 0 0;
     padding: 0;
+}
+
+.grid-item {
+    position: relative;
+    margin-left: 12%;
+    margin-right: 12%;
+    float: none;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--width2 {
+    width: 160px;
+}
+
+.grid-item--height2 {
+    height: 140px;
 }
 
 
