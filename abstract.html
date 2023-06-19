@@ -211,7 +211,7 @@
         <!-- End Gallery Single Section -->
 
         <!-- ======= Hero Section ======= -->
-        <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+        <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="500">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
@@ -228,10 +228,10 @@
         <section id="gallery" class="gallery">
             <div class="container-fluid">
 
-                <div class="grid row col-xl-10 gy-4" data-masonry='{ "itemSelector": ".grid-item" }'>
+                <div class="grid">
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
-                        <div class="gallery-item">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/The Castle of Ice.jpg" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
                                 <a href="assets/img/estevan/themes/abstract/The Castle of Ice.jpg" title="A fortress made of solid ice." class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
@@ -240,7 +240,7 @@
                     </div>
 
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
                         <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/A Piece of melting Glacier.webp" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -250,7 +250,7 @@
                     </div>
 
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
                         <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/Facing Faces.jpg" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -260,7 +260,7 @@
                     </div>
 
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
                         <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/Nature's Chemistry Lab (III).jpg" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -269,7 +269,7 @@
                         </div>
                     </div>
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
                         <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/Nature's Chemistry Lab (IX).jpg" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -279,7 +279,7 @@
                     </div>
 
                     <!-- End Gallery Item -->
-                    <div class="grid-item col-xl-3 col-lg-3 col-md-4">
+                    <div class="grid-item col-xl-4 col-lg-4 col-md-6">
                         <div class="gallery-item h-100">
                             <img src="assets/img/estevan_thumbnails/themes/abstract/Nature's Chemistry Lab (VIII).jpg" class="img-fluid" alt="">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -290,7 +290,7 @@
 
                 </div>
 
-            </div>
+                <!-- </div> -->
         </section>
         <!-- End Gallery Section -->
 
@@ -330,7 +330,14 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.grid-item',
+            // columnWidth: 150
+        });
+    </script>
 </body>
 
 </html>
